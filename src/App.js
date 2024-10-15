@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import DappSection from './FigmaDesign/dragbox';
+import AboutEthAi from './FigmaDesign/features';
+import Footer from './FigmaDesign/footerpage';
+import Navbar from './FigmaDesign/mainpage';
+import Question from './FigmaDesign/naire';
+import Roadmaps from './FigmaDesign/Roadmap';
+import Container from './FigmaDesign/secondcontainer';
+import Tokenomics from './FigmaDesign/tokenomics';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <Container/>
+      <AboutEthAi/>
+      <Tokenomics/>
+      <Roadmaps/>
+      <Question/>
+      <DappSection/>
+      <Footer/>
     </div>
   );
 }
