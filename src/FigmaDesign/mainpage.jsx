@@ -102,11 +102,11 @@ function Navbar() {
                     color: "#fff",
                 }}
             >
-                <h1 style={{ fontSize: "56px", fontWeight: "bold" }}>
+                {/* Adjusted line-height and removed margin */}
+                <h1 style={{ fontSize: "56px", fontWeight: "bold", lineHeight: "1.1", margin: 0 }}>
                     When Innovation
                 </h1>
-
-                <h1 style={{ fontSize: "56px", fontWeight: "bold", textAlign: "center", gap: "10px" }}>
+                <h1 style={{ fontSize: "56px", fontWeight: "bold", textAlign: "center", lineHeight: "1.1", margin: "5px 0 0 0" }}>
                     <span>Meets</span>
                     <span style={{ backgroundColor: "#55DAFF", padding: "0 20px", borderRadius: "12px" }}>
                         Investment
@@ -147,4 +147,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default Navbar;  

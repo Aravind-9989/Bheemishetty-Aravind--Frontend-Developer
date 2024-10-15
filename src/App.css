@@ -409,3 +409,167 @@ table td:nth-child(3) {
 .cta-button:hover {
   background-color: #00a9e0;
 }
+/* media */
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller screens (up to 1024px wide) */
+@media screen and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .trade-optimizer {
+    grid-column: 1 / span 2;
+    grid-row: auto;
+  }
+
+  .market-insight {
+    grid-column: 1 / span 2;
+  }
+
+  .portfolio-sync {
+    grid-column: 1 / span 2;
+  }
+
+  .opportunity-scout {
+    grid-column: 1 / span 2;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-section, .info-section {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .dapp-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-left, .cta-container {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
+/* For mobile devices (up to 768px wide) */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .grid-item {
+    padding: 15px;
+  }
+
+  .about-ethai h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-ethai p {
+    font-size: 1rem;
+  }
+
+  .read-more-btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .feature-box {
+    padding: 20px;
+  }
+
+  .tokenomics-content {
+    flex-direction: column;
+  }
+
+  .chart-section {
+    margin-right: 0;
+  }
+
+  .dapp-content h2 {
+    font-size: 28px;
+  }
+
+  .dapp-content p {
+    font-size: 16px;
+  }
+
+  .email-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cta-container {
+    flex-direction: column;
+  }
+}
+
+/* For very small devices (up to 480px wide) */
+@media screen and (max-width: 480px) {
+  .grid-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-ethai h1 {
+    font-size: 2rem;
+  }
+
+  .about-ethai p {
+    font-size: 0.9rem;
+  }
+
+  .read-more-btn {
+    font-size: 0.8rem;
+    padding: 7px 18px;
+  }
+
+  .features-grid {
+    padding: 5px;
+  }
+
+  .feature-box {
+    padding: 15px;
+  }
+
+  .tokenomics-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .dapp-content h2 {
+    font-size: 24px;
+  }
+
+  .dapp-content p {
+    font-size: 14px;
+  }
+
+  .footer-container {
+    padding: 15px;
+  }
+
+  .email-input {
+    width: 100%;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
